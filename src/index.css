@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#sideBar {
+  background-color: linear-gradient(90deg, rgba(41,121,255,1) 0%, rgba(155,99,226,1) 54%, rgba(243,52,181,1) 100%);
+}
+
+.sideNav {
+  color: white;
+}
+
+.response {
+  padding: 40px 0;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto; /* Ensure vertical scrollbar appears when needed */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.response::-webkit-scrollbar {
+  width: 0; /* Chrome, Safari, and Opera */
+}
+
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3344dc;
+  border-radius: 4px; /* Optional: Round the corners */
+
+}
